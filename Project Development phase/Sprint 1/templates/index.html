@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{title}}
+{% endblock title %}
+{% block content %}
+    {% if succ %}
+        <div class="alert alert-success" role="alert">{{ succ }}</div>
+        
+    {% endif %}
+    <div class="text-center">
+        <br>
+	<br>
+        <img src="/static/welcome.gif" class="img-fluid" alt="welcome">
+        <br>
+	<br>
+	<br>
+	<br>
+	<br>
+        <h1>Welcome to our flask assignment</h1>
+	<br>
+        <h3>This is a <strong>flask-app</strong> assignment.</h3>
+    </div>
+{% endblock content %}
